@@ -1,0 +1,93 @@
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <title>폼 삽입하기</title>
+        <style>
+            /* 리스트 안 나오게 */
+            ul{list-style-type:none;}
+        </style>
+    </head>
+    <body>
+        <!--memo로 이동/자동완성 기능-->
+        <form action="memo.html" autocomplete="off">
+            <!-- 레이블 for로 속성 지정 안 해 주면 클릭시 input창 커서 활성화 -->
+            <label>아이디(6자 이상)<input type="text" ></label>
+            <input type="submit" title="검색" >
+            <br>
+            <label for="user-id">아이디</label>
+            <!-- id로 지정 및 for로 받을 경우 연결됨 레이블 밖에 있는 경우--> 
+            <input type="text" name="" id="user-id">
+
+            <!-- 레이블은 체크박스 시 이름도 클릭하면 될 수 있도록 지정할 수 있다 -->
+
+            <h3>수강 분야(다수 선택 가능)</h3>
+            <ul>
+                <li><input type="checkbox" value="grm">문법</li>
+                <li><input type="checkbox" value="wr">작문</li>
+                <li><input type="checkbox" value="rd">독해</li>
+            </ul>
+
+            <h3>수강과목(1과목만 선택 가능)</h3>
+            <ul>
+                <li>
+                    <label><input type="radio" name="subject" value="eng">영어 회화</label>
+                </li>
+                <li>
+                    <label><input type="radio" name="subject" value="ch">중국어 회화</label>
+                </li>
+                <li>
+                    <label><input type="radio" name="subject" value="jp">일어 회화</label>
+                </li>
+            </ul>
+            <br>
+            <fieldset style="width: 400;">
+                <legend>개인 정보</legend>
+                <ul>
+                    <li>
+                        <label for="name">이름</label>
+                        <input type="text" id="name">
+                    </li>
+                    <li>
+                        <label for="mail">메일 주소</label>
+                        <input type="text" id="mail">
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset style="width: 400;">
+                <legend>로그인 정보</legend>
+                <ul>
+                    <li>
+                        <label for="id">아이디</label>
+                        <input type="text" id="id">
+                    </li>
+                    <li>
+                        <label for="pw">비밀번호</label>
+                        <input type="password" id="pw">
+                    </li>
+                </ul>
+            </fieldset>
+
+            <hr>
+
+            <h3>회원 가입</h3>
+                <form action="">
+                    <fieldset>
+                        <legend>필수 정보</legend>
+                        <ul>
+                            <li><label for="name1">이름 : <input type="text" id = "name1"></label></li>
+                        </ul>
+                    </fieldset>
+                    <fieldset>
+                        <legend>선택 정보</legend>
+                        <ul>
+                            <li><label for="birth">생일 : <input type="date" id="birth"></label></li>
+                        </ul>
+                    </fieldset>
+                </form>
+        </form>
+        <!-- 태그 구분 방법 3가지
+        name
+        id
+        class -->
+    </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인 폼 만들기</title>
+    <style>
+        li{list-style-type: none;}
+        li label{float: left; width: 120px; padding-right: 10px; text-align: right;}
+        li{margin: 10px;}
+        input[type="submit"]{width: 100%; height: 30px;}
+    </style>
+    <fieldset>
+        <legend>로그인 폼</legend>
+        <label for="user-id">아이디 : </label>
+        <input type="text" name="" id="user-id" size="10">
+        <label for="pw">비밀번호 : </label>
+        <input type="password" name="" id="pw">
+        <input type="submit" value="전송">
+        <input type="reset" value="삭제">
+        <input type="search" value="입력">
+    </fieldset>
+    <br>
+    <hr>
+    <br>
+    <h1>회원 가입</h1>
+    <form action="">
+        <fieldset>
+        <legend>로그인 정보</legend>
+        <ul>
+            <li>
+                <label for="username">아이디</label>
+                <input type="text" name="username">
+            </li>
+            <li>
+                <label for="userpassword">비밀 번호</label>
+                <input type="password" name="userpassword">
+            </li>
+            <li>
+                <label for="userpassword1">비밀번호 확인</label>
+                <input type="password" name="userpassword1">
+            </li>
+        </ul>
+    </fieldset>
+    <fieldset>
+        <legend>개인 정보</legend>
+        <ul>
+            <li>
+                <label for="name">이름</label>
+                <input type="text" name="name">
+            </li>
+            <li>
+                <label for="email">메일 주소</label>
+                <input type="email" name="email">
+            </li>
+            <li>
+                <label for="tel">연락처</label>
+                <input type="tel" name="tel">
+            </li>
+            <li>
+                <label for="url">블로그/홈페이지</label>
+                <input type="url" name="url">
+            </li>
+            <li>
+                <input type="submit" value="가입하기">
+            </li>
+        </ul>
+    </fieldset>
+    <hr>
+    <form action="">
+        <label for="comment">한 줄 댓글 : <input type="text" size="60" name="comment">
+    </form>
+</form>
+</head>
+<body>
+    
+</body>
+</html>
