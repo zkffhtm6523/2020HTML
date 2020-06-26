@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        legend {color: purple; font-weight: bold;}
+        label {color: green; font-weight: bold;margin-right: 10px;}
+        ul {list-style-type: none;}
+        ul label{float: left; width: 80px;}
+        li {margin-top: 10px; }
+    </style>
+    <title>드롭다운 항목 그룹으로 묶기</title>
+</head>
+<body>
+    <h1>여름방학 특강 신청</h1>
+    <fieldset>
+        <legend>수강 신청인</legend>
+        <ul>
+            <li>
+                <label for="no">학번</label>
+                <input type="text" in="no">
+            </li>
+            <li>
+                <label for="name">이름</label>
+                <input type="text" in="name">
+            </li>
+            <li>
+                <label class="reg" for="class">학과</label>
+                <select  id="clsss" id="class"  >
+                    <optgroup label="공과대학">
+                        <option value="archi">건축공학과</option>
+                        <option value="mechanic">기계공학과</option>
+                        <option value="indust">산업공학과</option>
+                        <option value="elec">전기전자공학과</option>
+                        <option value="computer">컴퓨터공학과</option>
+                        <option value="chemical">화학공학과</option>
+                    </optgroup>
+                    <optgroup label="인문대학">
+                        <option value="history">사학과</option>
+                        <option value="lang">어문학부</option>
+                        <option value="philo">철학</option>
+                    </optgroup>
+                </select>
+            </li>
+        </ul>
+    </fieldset>
+    <fieldset>
+        <legend>수강과목을 선택하세요</legend>
+        <ul>
+            <label for="interest">관심분야</label>
+            <input type="text" list="choices" id="interest">
+            <datalist id="choices">
+                <option value="grammar" label="문법"></option>
+                <option value="voca" label="어휘"></option>
+                <option value="speaking" label="회화"></option>
+                <option value="listening" label="리스팅"></option>
+                <option value="news" label="뉴스청취"></option>
+            </datalist>
+        </ul>
+    </fieldset>
+    
+    
+</body>
+</html>

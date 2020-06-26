@@ -1,0 +1,93 @@
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>input 태그의 다양한 속성</title>
+        <style>
+            ul{list-style-type: none;}
+            li label{float: left; width: 100px; text-align: center; padding-right: 10px; 
+                    color: green; font-weight: bold;}
+            li{margin: 10px;}
+        </style>
+    </head>
+    <body>
+        <h1>여름방학 특강 신청</h1>
+        <form action="color.html">
+            <fieldset>
+                <legend>신청자</legend>
+                <ul>
+                    <li>
+                        <label for=""> 이름
+                        </label><input type="text" autofocus required>
+                    </li>
+                    
+                    
+                    <li>
+                        <label for=""> 학번</label>
+                        <input type="text" placeholder="하이픈 없이 입력">
+                    </li>
+                    <li>
+                        <label for="major"> 학과</label>
+                        <select id="major">
+                            <option value="">컴퓨터공학과</option>
+                            <option value="">기계공학과</option>
+                            <option value="">전자공학과</option>
+                            <option value="">산업공학과</option>
+                            <option value="">통신공학과</option>
+                        </select>
+                    </li>
+                    <input type="submit" value="전송">
+                </ul>
+            </fieldset>
+        </form>
+        <fieldset>
+            <legend>수강과목</legend>
+                <ul>
+                    <label for="name"> 영어회화(초급)
+                    <li><input type="text" value="오전 09:00~11:00" id="eng" readonly ></li>
+                </ul>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>신청자</legend>
+            <ul>
+                <li>
+                    <label for=""> 이름
+                    </label><input type="text" autofocus required>
+                </li>
+                <li>
+                    <label for=""> 학번</label>
+                    <input type="text" placeholder="하이픈 없이 입력">
+                </li>
+                <li>
+                    <label for="major"> 학과</label>
+                    <select id="major">
+                        <option value="">컴퓨터공학과</option>
+                        <option value="">기계공학과</option>
+                        <option value="">전자공학과</option>
+                        <option value="">산업공학과</option>
+                        <option value="">통신공학과</option>
+                    </select>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>교재 주문</legend>
+            <ul>
+                <li>
+                    <label for="book">교재</label>
+                    <input type="text" id="book">
+                </li>
+                <li>
+                    <label for="sheet">워크시트</label>
+                    <input type="text" id="sheet">
+                </li>
+                <li>
+                    <label for="order">단체주문</label>
+                    <input type="number" id="order" value="10" min="10" max="100" step="10">
+                </li>
+            </ul>
+            <input type="submit" value="전송">
+        </fieldset>
+
+    </body>
+</html>
