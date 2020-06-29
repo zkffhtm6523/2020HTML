@@ -1,0 +1,35 @@
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>스타일의 우선순위</title>
+        <script src="prefixfree.min.js"></script>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+            bg-font{font-family: 'Nanum Gothic' 돋움;}
+            body{color: blue;}
+            h2{font-size: 20px; color: brown;}
+            #container{width: 600px; margin: 100px auto;}
+            .box{width: 120px; height: 80; border: 3px solid green; padding: 10px;}
+            .box:hover{
+                transform: rotate(30deg);
+            /*1번 : 접두사 일일이 다 붙이기\
+              2번 : 웹페이지 소스 다운 후 js파일 생성 후 참조*/
+            }
+        </style>
+    </head>
+    <body>
+        <h1>css</h1>
+        <h2>웹 문서의 디자인과 내용을 분리합니다</h2>
+        <p>웹 표준에 의한 웹 문서는 디자인과 내용이 분리되어 있습니다.</p>
+        <p>내용은 HTML을 이용해 구성하고, 디자인은 CSS를 이용해 꾸미는 것입니다</p>
+        <!--P212 : 브라우저 접두사 자동으로 붙이기-->
+        <div id = container>
+            <div class="box">Mouse Over</div>
+        </div>
+        <!-- p217 : 구글 웹폰트 무료 -->
+        <div class="ng-font">
+            ggg
+        </div>
+        ddd
+    </body>
+</html>

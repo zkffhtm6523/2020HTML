@@ -1,0 +1,55 @@
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <style>
+            ul li{list-style-type: none;}
+            li{margin-top: 5px;}
+            #container{ width: 550; margin: 0 auto; border: 1px solid gray; padding: 30;}
+            #btn{text-align: center; margin-top: 10px;}
+            .btn{width: 150px; height: 25px; background-color: black; color: white; }
+            .btn:hover{background-color: green;}
+        </style>
+        <!--컨테이너로 동적 웹-->
+        <!--div를 단체로 묶어서 id를 부여 후 하던지, class로 개별적으로 하던지, 모양이 달라짐-->
+    </head>
+    <body>
+        <div id="container">
+        <h1>프런트엔드 개발자 지원서</h1>
+        <p>HTML, CSS, Javascript에 대한 기술적 이해와 경험이 있는 분을 찾습니다.</p>
+        <hr>
+            <form action="apply.jsp">
+                <h3>개인 정보</h3>
+                <ul>
+                    <li>
+                        <label for="">이름</label>
+                        <input type="text" name="" id="" placeholder="공백없이 입력하세요">
+                    </li>
+                    <li>
+                        <label for="">연락처</label>
+                        <input type="tel" name="" id="" >
+                    </li>
+                </ul>
+                <h3>지원 분야</h3>
+                <ul>
+                    <li>
+                        <input type="radio" name="check" id="check1" checked>웹 퍼블리싱
+                    </li>
+                    <li>
+                        <input type="radio" name="check" id="check2" >웹 퍼블리싱 개발
+                    </li>
+                    <li>
+                        <input type="radio" name="check" id="check3" >개발 환경 개선
+                    </li>
+                </ul>
+                <label for=""><h3>지원 동기</h3></label>
+                <textarea name="memo" id="" cols="60" rows="5" placeholder="본사 지원 동기를 간략히 써 주세요"></textarea>
+                <br>
+                <div id="btn">
+                    <input type="submit" value="접수하기" class="btn">
+                    <input type="reset" value="다시 쓰기" class="btn">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

@@ -59,7 +59,55 @@
             </datalist>
         </ul>
     </fieldset>
-    
+    <textarea name="" id="" cols="100" rows="10">
+        
+        열심히 사는 사람들의 손을 잡아주는 곳-이지스퍼블리싱
+
+        우리는 책을 내기 전에 다시 한 번 물어봅니다
+        이 책이 사람들에게 도움이 되는가
+
+        더 쉽게 더 빠르게 지식을 전달하고 싶습니다.
+
+    </textarea>
+    <form action="">
+        <button type="submit" class="subm">
+            <img src="04/tick.png" alt="tick">전송하기
+        </button>
+    </form>
+    <!-- 자바스크립트 : parseInt() 함수 - 문자열을 숫자로 변경-->
+    <!-- oninput 속성은 값이 입력되어질때 나타나게 하는 속성 -->
+    <form oninput="result.value=parseInt(num1.value)+parseInt(num2.value)">
+        <input type="number" name="num1" value="0">+<input type="number" name="num2" value="0"> =
+        <output name="result" for="num"></output>
+    </form>
+    <ul>
+        <li>
+            <label for="">10초 남음</label>
+            <progress value="50" max="60"></progress>
+        </li>
+        <li>
+            <label for="">진행률 30%</label>
+            <progress value="50" max="60"></progress>
+        </li>
+    </ul>
+    <br>
+    <br>
+    <ul>
+        <li>
+            <label for="">사용량 64%</label>
+            <meter  min="0" max="100" value="64">
+        </li>
+        <br>
+        <li>
+            <label for="">트래픽 초과</label>
+            <meter value="9216" min="1024" max="10240" low="2048" high="9192">
+        </li>   
+        <br>
+        <li>
+            <label for="">적절한 트래픽</label>
+            <meter value="0.5" optimum="0.8">
+        </li>   
+    </ul>
     
 </body>
 </html>
