@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>글자 속성 한꺼번에 지정</title>
+    <style>
+        p.txt{font: italic 12px/24px 돋움;} /*글꼴 스타일, 크기, 줄 간격, 글꼴 */
+        h2{color: blue;}
+        .accent{color: #ff0000;}
+        p{line-height: e1.8;}
+        a{text-decoration: none;}
+        .edited{text-decoration: line-through;}
+        .trans1{text-transform: uppercase;} /*대문자로 변환*/
+        .trans2{text-transform: capitalize;} /*첫 번째만 대문자*/
+        .shadow1{color: orange; text-shadow: 1px 1px;}
+        /* 첫 번째 오른쪽 방향, 두 번째 아래쪽 방향*/
+        .shadow2{text-shadow: 2px 2px 3px #f00;}
+        .shadow3{color: #fff;text-shadow: 2px -2px 5px #000;}
+        /* 공백 처리*/
+        .white1{white-space: normal;}
+        .white2{white-space: nowrap;}
+        .white3{white-space: pre;}
+        .white4{white-space: pre-line;}
+        /* 자간 설정*/
+        .letter1{letter-spacing: 3em;}
+        .letter1{word-spacing: 3em;}
+</style>
+</head>
+<body>
+    <p class="txt">여러 요소가 함께 사용된 웹 문서 안에서 텍스트가 눈에 띄게 하려면 내 몸에 맞는 글꼴과 글자 크기,<br>
+         그리고 글자색을 선택하는 것이 중요합니다.</p>
+    <p style="font: caption;">[font:caption] 캡션에 어울리는 글꼴 스타일</p>
+    <p style="font: icon;">[font:icon] 아이콘에 어울리는 글꼴 스타일</p>
+    <p style="font:menu">[font:menu] 드롭다운 메뉴에 어울리는 글꼴 스타일</p>
+    <p style="font: message-box;">[font:message-box] 대화 상자에 어울리는 글꼴 스타일</p>
+    <p style="font:small-caption">[font:smal-caption] 작은 캡션에 어울리는 글꼴 스타일</p>
+    <p style="font: status-bar;">[font:status-bar] 상태표시줄에 어울리는 글꼴 스타일</p>
+    <hr>
+    <h1>세계 10대 슈퍼푸드</h1>
+    <img src="06/galic.jpg" alt="마늘">
+    <h2>마늘(Garlic)</h2><p>일해백리는....</p>
+    <p>마늘 특유의 아린 맛은 <span class="accent">알리신</span>이라는 성분 때문으로...</p>
+
+    <hr>
+    <h1>HTML5</h1>
+    <p>다양한 기기로 인터넷에 접속할 수 있는 요즘,<br>
+    <span class="edited">HTML4</span> HTML5를 공부해야할 때입니다.</p>
+    <p><a href="https://html.spec.whatwg.org/" target="_blank"><b>HTML5 표준 규약 살펴보기</b></a></p>
+    <hr>
+    <ul>
+        <li class="trans1">html</li>
+        <li class="trans1">css</li>
+        <li class="trans2">javascript</li>
+    </ul>
+    <hr>
+    <h1 class="shadow1">HTML5</h1>
+    <h1 class="shadow2">HTML5</h1>
+    <h1 class="shadow3">HTML5</h1>
+    <hr>
+    <h1>white-space</h1>
+    <p class="white1"><span class="letter1">텍스트에는</span> 글자뿐만 아니라 공백도 있죠 이 공백이 하나의 원칙으로 처리되지 않는다면 문서가 지저분해 보일 수도 있습니다
+        이럴 때 white-space 속성을 사용하면 텍스트와 함께 연속해 입력된 여러 개의 공백을 어떻게 처리할지 지정할 수 있습니다.</p>
+    <p class="white2">텍스트에는 글자뿐만 아니라 공백도 있죠 이 공백이 하나의 원칙으로 처리되지 않는다면 문서가 지저분해 보일 수도 있습니다
+        이럴 때 white-space 속성을 사용하면 텍스트와 함께 연속해 입력된 여러 개의 공백을 어떻게 처리할지 지정할 수 있습니다.</p>
+    <p class="white3">텍스트에는 글자뿐만 아니라 공백도 있죠 이 공백이 하나의 원칙으로 처리되지 않는다면 문서가 지저분해 보일 수도 있습니다
+        이럴 때 white-space 속성을 사용하면 텍스트와 함께 연속해 입력된 여러 개의 공백을 어떻게 처리할지 지정할 수 있습니다.</p>
+    <p class="white4">텍스트에는 글자뿐만 아니라 공백도 있죠 이 공백이 하나의 원칙으로 처리되지 않는다면 문서가 지저분해 보일 수도 있습니다
+        이럴 때 white-space 속성을 사용하면 텍스트와 함께 연속해 입력된 여러 개의 공백을 어떻게 처리할지 지정할 수 있습니다.</p>
+</body>
+</html>
