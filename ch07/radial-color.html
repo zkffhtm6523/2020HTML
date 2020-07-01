@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>원형 그라데이션의 색상 중지점 지정</title>
+    <style>
+        div{width: 300px; height: 220px; margin-bottom: 10px;}
+        .grad1{
+            background: skyblue;
+            background: radial-gradient(red,yellow,skyblue);
+            background: -moz-radial-gradient(red,yellow,skyblue);
+            background: -o-radial-gradient(red,yellow,skyblue);
+            background: -webkit-radial-gradient(red,yellow,skyblue);
+        }
+        .grad2{
+            background: skyblue;
+            background: radial-gradient(red,yellow 20%,skyblue);
+            background: -moz-radial-gradient(red,yellow 20%,skyblue);
+            background: -o-radial-gradient(red,yellow 20%,skyblue);
+            background: -webkit-radial-gradient(red 1%,yellow 20%,skyblue, black 90%);
+        }
+    </style>
+</head>
+<body>
+    <div class="grad1"></div>
+    <div class="grad2"></div>
+</body>
+</html>

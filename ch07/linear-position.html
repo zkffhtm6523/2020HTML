@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선형 그라데이션 지정</title>
+    <style>
+        div{ width: 300; height: 200px;}
+        .grad{
+            background-color: blue;
+            background: -webkit-linear-gradient(to right bottom, blue, white);
+            background: -moz-linear-gradient(to right bottom, blue, white);
+            background: -o-linear-gradient(to right bottom, blue, white);
+            background: linear-gradient(to right bottom, blue, white);
+        }
+        .grad2{
+            background-color: red;
+            background: -webkit-linear-gradient(45deg, red, white);
+            background: -moz-linear-gradient(45deg, red, white);
+            background: -o-linear-gradient(45deg, red, white);
+            background: linear-gradient(45deg, red, white);
+        }
+        .grad3{
+            background-color: #06f;
+            background: linear-gradient(to bottom, gray, white 30%, black);
+        }
+    </style>
+</head>
+<body>
+    <div class="grad"></div>
+    <div class="grad2"></div>
+    <div class="grad3"></div>
+</body>
+</html>
