@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>블럭레벨을 인라인으로 바꿔 배치</title>
+    <style>
+        nav{width: 600px; height: 50px; background-color: blue; color: white;}
+        nav ul li{display: inline-block; margin: 15px;}
+        #box1, #box2 {margin: 10px;}
+        .b1, .b2, .b3{width: 150px; height: 150px; margin: 10px; display: inline-block;}
+        /* 일반적인 inline 속성은 width 및 padding를 유지하지 못함*/
+        /* 일반적인 inline-block 속성은 width 및 padding를 유지함*/
+        .b1{background-color: red;}
+        .b2{background-color: green;}
+        .b3{background-color: blue;}
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>애완견 종류</li>
+            <li>입양하기</li>
+            <li>건강돌보기</li>
+            <li>더불어살기</li>
+        </ul>
+    </nav>
+    <div id="box1">
+        <div class="b1"></div>
+        <div class="b2" style="display: none;"></div>
+        <!-- 공간 자체가 없어짐 -->
+        <div class="b3"></div>
+
+    </div>
+    <div id="box2">
+        <div class="b1"></div>
+        <div class="b2" style="visibility: hidden;"></div>
+        <!-- 화면에서만 없어짐 -->
+        <div class="b3"></div>
+    </div>
+</body>
+</html>

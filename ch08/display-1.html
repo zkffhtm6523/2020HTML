@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지를 인라인에서 블록 레벨로 변경</title>
+    <style>
+        #block img{display: block; margin: 10px;}/* block 안에 img만 뜻함*/
+        /*#block,img{}  둘 다 포함*/
+        /* #block > img{} 자식요소*/
+        
+    </style>
+</head>
+<body>
+    <div id="inline">
+        <img src="08/pic1.jpg" alt="">
+        <img src="08/pic2.jpg" alt="">
+        <img src="08/pic3.jpg" alt="">
+    </div>
+    <div id="block">
+        <img src="08/pic1.jpg" alt="">
+        <img src="08/pic2.jpg" alt="">
+        <img src="08/pic3.jpg" alt="">
+    </div>
+
+</body>
+</html>
