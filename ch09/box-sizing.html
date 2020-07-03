@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스 모델의 너비 결정하기</title>
+    <style>
+        .box1{
+            width: 300px;
+            height: 150px;
+            margin: 10px;
+            padding: 30px;
+            border: 2px solid red;
+        }
+        .box2{
+            box-sizing: border-box;
+            width: 300px;
+            height: 150px;
+            margin: 10px;
+            padding: 30px;
+            border: 2px solid red;
+        }
+        .left-img{
+            float: left;
+            margin-left: 25px;
+            width: 120px;
+            margin-right: 10px;
+        }
+        .box3{
+            padding: 20px;
+            margin-right: 10px;
+            background: #ffd800;
+            float: left;
+        }
+        .box4{
+            padding: 20px;
+            margin-right: 10px;
+            background: #00ff21;
+            float: left;
+        }
+        .box5{
+            padding: 20px;
+            margin-right: 10px;
+            background: #0094ff;
+            float: left;
+        }
+        .box6{
+            padding: 20px;
+            margin-right: 10px;
+            background: #ffffff;
+            float: right;
+            border: 1px solid black;
+        }
+        .b1,.b2,.b3,.b4{height: 150px; margin: 20px;}
+        .b1,.b2{ width: 200px};
+        .b3,.b4{ width: 800px};
+        .b1{background-color: orange; float: left;}
+        .b2{background-color: blue; float: left;}
+        .b3{background-color: green; }
+        .b4{background-color: purple; clear: both;}
+    </style>
+</head>
+<body>
+    <div class="box1">
+        box-sizing = "content-box"
+    </div>
+    <div class="box2">
+        box-sizing = "border-box"
+    </div>
+    <img src="09/cover.jpg" class="left-img">
+    <h1>바쁜 3, 4학년을 위한 빠른 분수</h1>
+    <h2>3, 4학년이 꼭 알아야 할 분수를 한 권에 모았어요!</h2>
+    <p>한국 교육과정평가원이 최근 발표한 보고서에 따르면 '수포자'는 초등 3학년 때 분수를 배우면서 시작된다고 합니다. 분수를 어려워하는 
+        이유는 분모와 분자, 2개의 수가 나와 낯설기 때문입니다. 이렇게 낯설고 어려운 분수, 어떻게 공부해야 할까요?</p>
+
+    <div class="box3">박스1</div>
+    <div class="box4">박스2</div>
+    <div class="box5">박스3</div>
+    <div class="box6">박스4</div>
+    
+    <div style="clear: both;">111</div>
+
+    <div class="b1">박스1</div>
+    <div class="b2">박스2</div>
+    <div class="b3">박스3</div>
+    <div class="b4">박스4</div>
+</body>
+</html>
