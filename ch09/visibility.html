@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>visibility</title>
+    <style>
+        img{margin: 10px; padding: 5px; border: 1px solid black;}
+        /*보이지만 않게 하는 것*/
+        .invisible{visibility: hidden;}
+        /*완전히 그 영역을 없애고 다른 영역이 차지하게 하는 것*/
+        .display{display: none;}
+    </style>
+</head>
+<body>
+    <img src="09/pic1.jpg" alt="">
+    <img src="09/pic2.jpg" alt="" class="invisible">
+    <img src="09/pic3.jpg" alt="">
+    <img src="09/pic1.jpg" alt="">
+    <img src="09/pic2.jpg" alt="" class="display">
+    <img src="09/pic3.jpg" alt="">
+</body>
+</html>
