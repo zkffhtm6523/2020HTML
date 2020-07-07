@@ -1,0 +1,9 @@
+.container{width: 800px; padding: 20px; margin: 0 auto; border: 1px solid black;}
+header{height: 60px; padding: 10px; background-color: darkslateblue; color: white;}
+header h1{float: left; width: 30%; margin-top: 10px; margin-left: 20pxs;}
+header ul{list-style-type: none;}
+header ul li{display: inline-block; width: 15%; margin-top: 5px; font-weight: bold; margin-left: 20px;}
+header ul li a{color: white; text-decoration: none;}
+section article{border: 2px dotted orange; padding: 10px; margin-bottom: 20px;}
+footer{height: 50px; padding: 10px; background-color: darkgray;}
+footer p{text-align: right; font-weight: bold; color: white;}

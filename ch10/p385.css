@@ -1,0 +1,19 @@
+.container{width: 1080; height: 892px auto; margin: 0 auto; border: 2px solid black;}
+.title{border: 1px solid rgb(156, 143, 143);background-color: rgb(15, 66, 143); color: white; width: 892px;}
+.g2{margin-left: 150px;}
+h3{display: inline-block;}
+.g,.g2,.g1{display: inline-block;}
+.g1{margin: 5px; font-weight: bold;}
+.pet1{border: 3px solid black; margin: 15px; height: 540px; border-radius: 30px; padding: 18px; width: 220px; float: left;}
+.pet2{border: 3px solid pink;margin: 10px; height: 540px; border-radius: 30px;padding: 10px; width: 200px; float: left;}
+.pet3{border: 3px solid green;margin: 10px; height: 540px; border-radius: 30px;padding: 10px; width: 220px; float: left;}
+footer{clear: both;}
+dt{color: purple; font-weight: bold;}
+.buttom{margin: 5px; margin-top: 0px;}
+dt,dd{margin-bottom: 5px;}
+dd{font-size: small;}
+footer h3{margin-top: 0px;}
+footer .buttom{background-color: rgb(136, 202, 37) ; width: 892px; padding: 4px; margin: 0px;}
+footer .copyright{background: black; color: white; text-align: center; font-weight: bold;
+                height: 70px; margin-top: -20px; width: 900px;}
+footer .copyright div{padding-top: 20px;}
