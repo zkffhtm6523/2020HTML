@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>동영상으로 홈페이지 대문 만들기</title>
+    <style>
+        #bg{
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: auto;
+            height: auto;
+            min-width: 100%;
+            max-width: 100%;
+            z-index: -1;
+        }
+        .container{
+            position: relative;
+            text-align: center;
+            margin-top: 30%;
+            margin-left: 30%;
+        }
+        h1{color: blueviolet; font-weight: bold; text-decoration: underline;}
+    </style>
+</head>
+<body>
+    <video src="11/media/flame.mp4" controls autoplay loop poster="11/flame.jpg" id="bg"></video>
+    <div class="container">
+        <h2>사람을 구체적으로 도와주는 책</h2>
+        <h1>이지스퍼블리싱</h1>
+    </div>
+</body>
+</html>
