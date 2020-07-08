@@ -1,0 +1,21 @@
+.container{width: 700px; height: 968px; margin: 0 auto; border: 1px solid black;}
+nav{background-color: rgb(244, 96, 117);height: 81px;}
+nav ul {list-style-type: none; color: white; font-weight: bold; display: inline-block;}
+nav ul li{display: inline-block;  margin-right: 20px; margin-top: 15px;}
+a{text-decoration: none; color: white;}
+nav img{display: inline-block; margin-left: 100px; float: right; width: 130px; height: 81px;}
+section h2{clear: both; margin-left: 20px;}
+section{width: 500px; display: inline-block;}
+section article p{text-align: justify;}
+section .text1{width: 210px; height: 340px; border: 3px dotted palevioletred; margin-left: 10px; display: inline-block; position: relative; top: -80px; padding: 10px;}
+section .text2{width: 210px; height: 340px; border: 3px dotted palevioletred; margin-left: 5px; display: inline-block; position: relative; top: 5px; padding: 10px;}
+section .text3{width: 210px; height: 300px; border: 3px dotted palevioletred; margin-left: 10px; display: inline-block; position: relative; top: -90px; padding: 10px;}
+section .text4{width: 210px; height: 300px; border: 3px dotted palevioletred; margin-left: 5px; display: inline-block; position: relative; top: -70px; padding: 10px;}
+aside{width: 135px; height: 658px; border: 3px dotted green; padding: 20px ; display: inline-block; position: relative; top: -125px; left: 5px;}
+aside img{margin-left: -20px;}
+footer{background-color: rgb(244,96,117); height: 100px; margin-top: -118px; text-align: center; color: white; font-weight: bold;}
+.text1:hover{background-color: greenyellow; border: 3px dotted orange; }
+.text2:hover{background-color: greenyellow; border: 3px dotted orange; }
+.text3:hover{background-color: greenyellow; border: 3px dotted orange; }
+.text4:hover{background-color: greenyellow; border: 3px dotted orange; }
+aside:hover{background-color: greenyellow; border: 3px dotted orange; }
