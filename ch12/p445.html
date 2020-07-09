@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상 요소</title>
+    <style>
+        .container{width: 600px; margin: 30px auto;}
+        /* first-line : 클라이언트에 표시될 첫번째 라인 */
+        .content::first-line{text-decoration: underline; font-style: italic;}
+        /* first-letter : 클라이언트에 표시될 첫번째 글자 */
+        .content::first-letter{font-size: 2em; background-color: yellow; padding: 10px;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>가상 요소 : first-line, first-letter</h3>
+        <p class="content">
+            국회에 제출된 법률안 기타의 의안은 회기중에 의결되지 못한 이유로 폐기되지 아니한다. 다만, 국회의원의 임기가 만료된 때에는 그러하지 아니하다. 국가는 건전한 소비행위를 계도하고 생산품의 품질향상을 촉구하기 위한 소비자보호운동을 법률이 정하는 바에 의하여 보장한다. 대통령은 취임에 즈음하여 다음의 선서를 한다. 모든 국민은 주거의 자유를 침해받지 아니한다. 주거에 대한 압수나 수색을 할 때에는 검사의 신청에 의하여 법관이 발부한 영장을 제시하여야 한다. 헌법재판소는 법률에 저촉되지 아니하는 범위안에서 심판에 관한 절차, 내부규율과 사무처리에 관한 규칙을 제정할 수 있다. 
+        </p>
+    </div>
+    
+</body>
+</html>

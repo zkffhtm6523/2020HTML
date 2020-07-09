@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first-of-type</title>
+    <style>
+        .container{width: 500px; margin: 50px auto;}
+        /* fitst-of-type : 형제 중에서 첫 번째 요소 */
+        .content1 p:first-of-type{color: red;}
+        .content1 p:last-of-type{background-color: blue;}
+        /* 자식이 오직 하나인 li : 다른 태그 요소는 아무것도 없을 때 */
+        .content2 li:only-child{border: 2px dotted red;}
+        /* 자식이 오직 하나인 li : 다른 태그 요소는 있어도 됨 */
+        .content2 li:only-of-type{background-color: yellow;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>과목</h3>
+        <div class="content1">
+            <p>1. JAVA</p>
+            <p>2. JSP</p>
+            <p>3. HTML5</p>
+            <p>4. Javascript</p>
+            <p>5. Oracle</p>
+        </div>
+        <div class="content2">
+            <ul>프로그래밍
+                <li>자바</li>
+            </ul>
+            <ul>DBMS
+                <li>Oracle</li>
+                <br>
+            </ul>
+            <ul>웹프로그래밍
+                <li>ASP</li>
+                <li>JSP</li>
+                <li>PHP</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

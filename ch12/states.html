@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상 클래스 선택자</title>
+    <style>
+        .container{width: 800px; margin: 50px auto;}
+        input:disabled{background: #ddd; border: 1px #ccc solid;}
+        input:checked + span{color: blue;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <fieldset>
+            <legend>사용자 정보</legend>
+            <label for="name">이름</label>
+            <input type="text" id="name" autofocus>
+        </fieldset>
+        <fieldset>
+            <legend>신청 과목</legend>
+            <p>이 달에 신청할 과목을 선택하세요</p>
+            <label for="radio1"><input type="radio" name="subject" value="speaking" id="radio1"><span>회화</span></label>
+            <label for="radio2"><input type="radio" name="subject" value="grammar"  id="radio2"><span>문법</span></label>
+            <label for="radio3"><input type="radio" name="subject" value="writing" id="radio3"><span>작문</span></label>
+        </fieldset>
+    </div>
+</body>
+</html>

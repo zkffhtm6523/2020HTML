@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>속성 선택자</title>
+    <style>
+        .container{width: 800px; margin: 50px auto;}
+        ul li{width: 15%; display: inline-block;}
+        ul li a{text-decoration: none; color: blue; padding: 10px;}
+        /* 특정 값을 포함(하이픈도 포함)         */
+        a[title |= 'us']{
+            background: url('12/us.png') no-repeat left center;
+            padding: 5px 25px;
+        }
+        a[title ^= 'us']{
+            /* a[title ~= 'us'] */
+            background: url('12/us.png') no-repeat left center;
+            padding: 5px 25px;
+        }
+        a[title ^= 'jap']{
+            /* a[title ~= 'us'] */
+            background: url('12/jp.png') no-repeat left center;
+            padding: 5px 25px;
+        }
+        a[title ^= 'chin']{
+            /* a[title ~= 'us'] */
+            background: url('12/ch.png') no-repeat left center;
+            padding: 5px 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul>
+            <li>외국어 서비스 : </li>
+            <li><a href="#" title="us">영어</a></li>
+            <li><a href="#" title="us-english">영어</a></li>
+            <li><a href="#" title="japanese">일본어</a></li>
+            <li><a href="#" title="chinese">중국어</a></li>
+        </ul>
+    </div>
+</body>
+</html>

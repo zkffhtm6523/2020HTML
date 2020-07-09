@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상 요소</title>
+    <style>
+        .container{width: 500px; margin: 30px auto;}
+        li{margin-bottom: 20px;}
+        .hot::after{
+            content: "NEW!!";
+            font-size: x-small;
+            padding: 2px 5px;
+            margin: 0 10px;
+            background-color: red; 
+            color: white;
+            border-radius: 5px;
+        }
+        .accent::before{
+            content : "★";
+            background-color: purple;
+            color: yellow;
+            padding: 2px 5px;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>제품 목록</h1>
+        <ul>
+            <li class="hot">제품 A</li>
+            <li>제품 B</li>
+            <li>제품 C</li>
+            <li class="hot">제품 D</li>
+        </ul>
+        <h1>중요 과목</h1>
+        <ul>
+            <li>Android</li>
+            <li class="accent">Oracle</li>
+            <li>HTML5/CSS3</li>
+            <li>JAVA</li>
+            <li class="accent">Javascript</li>
+        </ul>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상 클래스</title>
+    <style>
+        .container{
+            width: 500px;
+            margin: 50px auto;
+        }
+        li:not(#winner){
+            background-color: red;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>: not 가상 클래스 사용</h3>
+        <ul>
+            <li id="winner">삼성 라이온즈</li>
+            <li id="winner">기아 타이거즈</li>
+            <li id="winner">롯데 자이언츠</li>
+            <li>한화 이글즈</li>
+            <li id="winner">엘지 트윈스</li>
+            <li id="winner">두산 베어즈</li>
+        </ul>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>속성 선택자</title>
+    <style>
+        .container{width: 800px; margin: 50px auto;}
+        /* $= 특정값으로 끝나는 속성을 포함한다 */
+        a[href $= 'hwp']{
+            background: url('12/hwp_icon.gif') no-repeat right center;
+            padding-right: 25px;
+        }
+        a[href $= 'xls']{
+            background: url('12/excel_icon.gif') no-repeat right center;
+            padding-right: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>회사 소개 파일 다운 받기</h3>
+        <ul>
+            <li><a href="intro.hwp">hwp 파일</a></li>
+            <li><a href="intro.xls">엑셀 파일</a></li>
+        </ul>
+    </div>
+</body>
+</html>
