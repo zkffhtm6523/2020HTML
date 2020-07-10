@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition-delay</title>
+    <style>
+        #wrapper{
+            width: 500px; height: 150px;
+            border: 1px solid #ccc;
+            border-radius: 30px; padding: 20px;
+        }
+        .box{width: 60px; height: 60px; 
+            margin-bottom: 30px; background-color: lightgray}
+        .box p{
+            font-size: 0.8em;
+            line-height: 30px;
+            text-align: center;
+        }
+        #no-delay{
+            border: 2px solid red;
+        }
+        #delay{border: 2px solid blue;}
+        .box{transition-property: transform;}
+        #wrapper:hover .box{
+            transform: translate(400px) rotate(720deg);
+        }
+        #no-delay{
+            transition-duration: 3s;
+            transition-delay: 0;
+            }
+        #delay{
+            transition-duration: 3s;
+            transition-delay: 0.5s;
+            }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="no-delay" class="box">
+            <p>no-delay</p>
+        </div>
+        <div id="delay" class="box">
+            <p>delay</p>
+        </div>
+    </div>
+    
+</body>
+</html>

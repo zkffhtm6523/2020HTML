@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition</title>
+    <style>
+        .wrapper{width: 500px;}
+        .box1{
+            width: 100px; height: 100px; background-color: red;
+            border: 1px solid black;
+            transition-property: background-color, transform, width, height;
+            transition-duration: 2s,3s;
+            }
+        .box1:hover{
+            width: 200px; height: 200px;
+            background-color: #ff6e5f;
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="box1"></div>
+    </div>
+</body>
+</html>

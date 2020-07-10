@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform-style</title>
+    <style>
+        .container{width: 300px; height: 300px;
+                border: 1px solid black; margin: 50px;}
+        .box1, .box2{width: 300px;}
+        .box1{background-color: #82cbd8; width: 300px; height: 300px;
+        transform: rotateY(45deg);}
+        .box2{background-color: #0d6097; width: 300px; height: 200px;
+        transform: rotateX(45deg);}
+        #tr-style1{transform-style: preserve-3d;}
+        #tr-style2{transform-style: preserve-3d;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1" id="tr-style1">
+            <div class="box2"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box1" id="tr-style2">
+            <div class="box2"></div>
+        </div>
+    </div>
+</body>
+</html>

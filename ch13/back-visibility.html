@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>backface-visibility</title>
+    <style>
+        .container{width: 200px; height: 200px; border: 1px solid black; margin: 20px; perspective: 300px;}
+        .box{background-color: #82cbd8; transform: rotateY(135deg); width: 200px; height: 200px;}
+        #back1{backface-visibility: visible;}
+        #back2{backface-visibility: visible;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="back1">
+            <h1>BACK</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box" id="back2">
+            <h1>BACK</h1>
+        </div>
+    </div>
+</body>
+</html>

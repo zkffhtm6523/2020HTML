@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform-origin</title>
+    <style>
+        .origin{width: 160px; height: 240px; border: 1px solid black; margin: 20px;
+                margin: 30px;}
+        .rose{transform: rotateZ(10deg);}
+        .ltop .rose{transform-origin: left top;}
+        .rtop .rose{transform-origin: right top;}
+        .lbuttom .rose{transform-origin: left bottom;}
+        .rbuttom .rose{transform-origin: right bottom;}
+    </style>
+</head>
+<body>
+    <div class="origin">
+        <div class="ltop">
+            <img src="13/rose.jpg" alt="" class="rose">
+        </div>
+    </div>
+    <div class="origin">
+        <div class="rtop">
+            <img src="13/rose.jpg" alt="" class="rose">
+        </div>
+    </div>
+    <div class="origin">
+        <div class="lbottom">
+            <img src="13/rose.jpg" alt="" class="rose">
+        </div>
+    </div>
+    <div class="origin">
+        <div class="rbottom">
+            <img src="13/rose.jpg" alt="" class="rose">
+        </div>
+    </div>
+</body>
+</html>

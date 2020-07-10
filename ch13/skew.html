@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>skew</title>
+    <style>
+        /*perspective : 3차원 깊이감*/
+        .origin{width: 250px; height: 250px; border: 1px solid black; margin: 10px;
+                float: left;}
+        .rotatex:hover{transform: skew(45deg);}
+        .rotatey:hover{transform: skew(15deg);}
+        .rotatez:hover{transform: skew(15deg, 15deg);}
+    </style>
+</head>
+<body>
+    <div class="origin">
+        <div class="rotatex">
+            <img src="13/fruit.jpg" alt="">
+        </div>
+    </div>
+    <div class="origin">
+        <div class="rotatey">
+            <img src="13/fruit.jpg" alt="">
+        </div>
+    </div>
+    <div class="origin">
+        <div class="rotatez">
+            <img src="13/fruit.jpg" alt="">
+        </div>
+    </div>
+    <div class="origin">
+        <div class="rotatexyz">
+            <img src="13/fruit.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>
