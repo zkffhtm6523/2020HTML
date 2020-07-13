@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation-name</title>
+    <style>
+        .container{width: 500px; margin: 50px auto;}
+        #box1,#box2{width: 100px; height: 100px; margin: 20px;}
+        #box1{background-color: #4cff00; 
+        animation-name: shape; animation-duration: 3s;
+        animation-direction: alternate;}
+        #box2{background-color: #8f06b0; 
+        animation-name: rotate; animation-duration: 3s;}
+        /* animation */
+        @keyframes shape{
+            to{border-radius: 50%;}
+        }
+        @keyframes rotate{
+            from{transform: rotateX(0deg);}
+            to{transform: rotate(45deg);}
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="box1"></div>
+        <div id="box2"></div>
+    </div>
+</body>
+</html>

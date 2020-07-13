@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation-count</title>
+    <style>
+        .container{width: 600px; margin: 100px auto;}
+        .box{
+            height: 60px;
+            /* animation-name: moving;
+            animation-duration: 3s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite; */
+            animation: moving 3s infinite alternate;
+            }
+        @keyframes moving{
+            from{
+                width: 50px;
+                background-color: #faef7c;
+                opacity: 0.5;
+                transform: scale(0.5) rotate(640deg);
+            }
+            to{
+                width: 500px;
+                background: #ff9400;
+                opacity: 1;
+                transform: scale(1) rotate(0deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"><h3>CSS3 Animation</h3></div>
+    </div>
+</body>
+</html>

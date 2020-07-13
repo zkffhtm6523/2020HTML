@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation 2개</title>
+    <style>
+        .container{width: 500px; margin: 100px auto;}
+        .box{width: 60px; height: 60px; margin: 60px;
+        animation: rotate 1.5s infinite,background 1.5s alternate;}
+        /*animation*/
+        @keyframes rotate{
+            0%{transform: perspective(120px) rotateX(0deg) rotateY(0deg);}
+            50%{transform: perspective(120px) rotateX(-180deg) rotateY(0deg);}
+            100%{transform: perspective(120px) rotateX(-180deg) rotateY(-180deg);}
+        }
+        @keyframes background{
+            0%{background-color: red;}
+            50%{background-color: green;}
+            100%{background-color: blue;}
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>
