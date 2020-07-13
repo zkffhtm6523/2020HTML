@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연습문제 3번</title>
+    <style>
+        .container{width: 600px; height: 600px; margin: 50px auto;}
+        .lamp{width: 250px; height: 200px; 
+        background-image: url('13/lamp.jpg') ;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /*hover시 1초 동안 모든 속성 적용(브라우저별)*/
+        transition: all 1s;
+        -o-transition: all 1s;
+        -webkit-transition: all 1s;
+        -moz-transition:all 1s
+        }
+        .lamp:hover{
+            /* 그림자 주기 */
+            box-shadow: 5px 5px 3px black;
+            /* 1.5배 확대 */
+            transform: scale(1.5);
+        }
+        /*2번 방법*/
+        /* .lamp:hover{
+            animation: img-scale 1s;
+        }
+        @keyframes img-scale{
+            0%{}
+            100%{transform-origin: left top;
+            transform: scale(1.5);
+            box-shadow: 5px 5px 3px black;}
+        } */
+
+        
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="lamp"></div>
+    </div>
+</body>
+</html>

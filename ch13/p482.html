@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation 효과</title>
+    <style>
+        .container{width: 1000px; margin: 30px auto;}
+        .prod-list{list-style-type: none; margin: 0; padding: 0;}
+        .prod-list li{float: left; margin: 10px; position: relative; transform: translateY(-200px);}
+        .prod-list .caption{position: absolute; top: 200px; width: 300px;
+                            height: 200px; border: 1px solid black;
+                            background-color: rgba(0, 0, 0, 0.5);}
+        .prod-list .caption h1, .prod-list .caption p{
+            color: white;
+            text-align: center;
+        }
+        .prod-list img{float: left; margin: 0; padding: 0; transform: translateY(200px);}
+        .prod-list li .caption{visibility: hidden; transition: all 0s;}
+        .prod-list li:hover .caption{
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>신상품 목록</h1>
+        <ul class="prod-list">
+            <li>
+                <img src="13/prod1.jpg" alt="">
+                <div class="caption">
+                    <h1>상품1</h1>
+                    <p>상품 1 설명 텍스트</p>
+                    <p>가격 : 12,000원</p>
+                </div>
+            </li>
+            <li>
+                <img src="13/prod2.jpg" alt="">
+                <div class="caption">
+                    <h1>상품2</h1>
+                    <p>상품 2 설명 텍스트</p>
+                    <p>가격 : 25,000원</p>
+                </div>
+            </li>
+            <li>
+                <img src="13/prod3.jpg" alt="">
+                <div class="caption">
+                    <h1>상품3</h1>
+                    <p>상품 3 설명 텍스트</p>
+                    <p>가격 : 12,345원</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    
+</body>
+</html>

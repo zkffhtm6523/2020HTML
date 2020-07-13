@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ani-keyframes</title>
+    <style>
+        .rect{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            animation-name: change-bg;
+            animation-duration: 3s;
+            /* animation-delay: 2s; 지연시간 */
+            animation-iteration-count: 3; /*3번 반복*/
+        }
+        @keyframes change-bg{
+            0%{
+                background-color: blue;
+            }
+            30%{
+                background-color: yellowgreen;
+            }
+            100%{
+                background-color: #a5d6ff;
+                border-radius: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="rect"></div>
+    </div>
+</body>
+</html>
