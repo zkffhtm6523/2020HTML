@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>화면 해상도와 화면 너비에 따라 이미지 지정</title>
+    <style>
+        video{max-width: 100%;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <picture>
+            <source srcset="14/shop-large.jpg" media="(min-width:1024px)">
+            <source srcset="14/shop-medium.jpg" media="(min-width:786px)">
+            <source srcset="14/shop-small.jpg" media="(min-width:320px)">
+            <img src="14/shop.jpg" style="width: 100%;" alt="fill with coffee">
+        </picture>
+        <video src="14/cars.mp4" controls></video>
+    </div>
+</body>
+</html>
