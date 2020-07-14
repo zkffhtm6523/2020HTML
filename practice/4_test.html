@@ -8,6 +8,7 @@
         body{margin: 0px auto; width: 640px; border: 1px solid black; padding: 20px;}
         ul{list-style-type: none;}
         .btn{text-align: center;}
+        .la1, .la2{float: left; width: 80px;}
     </style>
 </head>
 <body>
@@ -20,9 +21,15 @@
         <div>
             <form action="">
                 <h3>개인정보</h3>
-                <ul>
-                    <li><label for="name">이름<input type="text" placeholder="공백없이 입력하세요" id="name"></label></li>
-                    <li><label for="tel">연락처<input type="tel" id="tel"></label></li>
+                <ul class="text1">
+                    <li>
+                        <label for="name" class="la1">이름</label>
+                        <input type="text" placeholder="공백없이 입력하세요" id="name">
+                    </li>
+                    <li>
+                        <label for="tel" class="la2">연락처</label>
+                        <input type="tel" id="tel">
+                    </li>
                 </ul>
                 <h3>지원 분야</h3>
                 <ul>
