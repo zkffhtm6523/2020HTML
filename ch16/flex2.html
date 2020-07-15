@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        #container{
+            width: 500px; height: 300px; margin: 50px auto; display: flex;
+            background-color: yellow;
+        /*주축(x축,가로) 기준 배치 방법 지정*/
+        /* justify-content: space-around; */
+
+        /*주축(y축,세로) 기준 배치 방법 지정*/
+        align-items: center;
+        }
+
+        #box1, #box2, #box3{
+            width: 100px; height: 50px; background-color: gray;
+            border: 1px solid black;
+        }
+        #box1{align-self: flex-start;}
+        h2{text-align: center;}
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="box1"><h2>1</h2></div>
+        <div id="box2"><h2>2</h2></div>
+        <div id="box3"><h2>3</h2></div>
+    </div>
+    
+</body>
+</html>
